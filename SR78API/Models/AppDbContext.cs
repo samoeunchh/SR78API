@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SR78.DataLayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,6 @@ namespace SR78API.Models
         {
         }
         public DbSet<Category> Category { get; set; }
+        public DbSet<Brand> Brand { get; set; }
     }
 }

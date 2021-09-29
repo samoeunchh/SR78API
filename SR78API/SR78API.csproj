@@ -16,4 +16,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SR78.DataLayer\SR78.DataLayer.csproj" />
+  </ItemGroup>
+
 </Project>

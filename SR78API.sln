@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SR78API", "SR78API\SR78API.csproj", "{12BB6D3B-1D14-43A5-A889-3754D567F89B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SR78API", "SR78API\SR78API.csproj", "{12BB6D3B-1D14-43A5-A889-3754D567F89B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SR78.PresentationConsole", "SR78.PresentationConsole\SR78.PresentationConsole.csproj", "{5CA42FE8-E1E0-4C00-A13D-722CA8FC26A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SR78.DataLayer", "SR78.DataLayer\SR78.DataLayer.csproj", "{3AF560DA-2B7D-47EF-95A4-A3FB8B2600EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{12BB6D3B-1D14-43A5-A889-3754D567F89B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12BB6D3B-1D14-43A5-A889-3754D567F89B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12BB6D3B-1D14-43A5-A889-3754D567F89B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CA42FE8-E1E0-4C00-A13D-722CA8FC26A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CA42FE8-E1E0-4C00-A13D-722CA8FC26A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CA42FE8-E1E0-4C00-A13D-722CA8FC26A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CA42FE8-E1E0-4C00-A13D-722CA8FC26A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AF560DA-2B7D-47EF-95A4-A3FB8B2600EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AF560DA-2B7D-47EF-95A4-A3FB8B2600EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AF560DA-2B7D-47EF-95A4-A3FB8B2600EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AF560DA-2B7D-47EF-95A4-A3FB8B2600EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
