@@ -16,6 +16,12 @@ namespace SR78.PresentationConsole
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new
                 MediaTypeWithQualityHeaderValue("application/json"));
+            var category = new Category
+            {
+                CategoryName = "testing Category",
+                Description = "testing"
+            };
+            PostData(category).Wait();
             GetCategoryAsync().Wait();
             Console.ReadLine();
         }
@@ -33,6 +39,19 @@ namespace SR78.PresentationConsole
             else
             {
                 Console.WriteLine("No data");
+            }
+        }
+        static async Task PostData(Category category)
+        {
+            HttpResponseMessage response = await client.PostAsJsonAsync<Category>("api/Category", category);
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("======Record was saved=====");
+            }
+            else
+            {
+                var errorMessage = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+                Console.WriteLine(errorMessage);
             }
         }
     }
